@@ -7,12 +7,12 @@ window.onerror = (e) => {
   store.reset();
 };
 
-const app = new App({
-  target: document.getElementById("app"),
-  props: {
-    t: await store.load(),
-    save: (tasks) => store.save(tasks),
-  },
-});
-
-export default app;
+(async () => {
+  const app = new App({
+    target: document.getElementById("app"),
+    props: {
+      t: await store.load(),
+      save: (tasks) => store.save(tasks),
+    },
+  });
+})();
