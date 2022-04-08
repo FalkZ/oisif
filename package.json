@@ -1,0 +1,30 @@
+{
+  "name": "daily",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@tsconfig/svelte": "^2.0.1",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.7",
+    "svelte-preprocess": "^4.9.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.0"
+  },
+  "dependencies": {
+    "@crownframework/svelte-error-boundary": "^1.0.3",
+    "@svgmoji/noto": "^3.2.0",
+    "canvas-confetti": "^1.5.1",
+    "localforage": "^1.10.0",
+    "svgmoji": "^3.2.0",
+    "twemoji": "^14.0.2"
+  }
+}

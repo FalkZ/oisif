@@ -1,0 +1,9 @@
+{
+  "background_color": "#e6e6f7",
+  "description": "Daily Checkboxes",
+  "display": "standalone",
+
+  "icons": [{ "src": "/icon.svg", "type": "image/svg+xml", "sizes": "any" }],
+  "name": "oisif",
+  "short_name": "oisif"
+}
