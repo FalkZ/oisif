@@ -47,9 +47,6 @@
   const showConvetti = () => {
     show = show + 1;
   };
-
-  $: if (tasks.length && tasks.reduce((acc, { done }) => acc && done, true))
-    showConvetti();
 </script>
 
 <svelte:head>
@@ -68,7 +65,11 @@
 
 <ul
   on:click={() => {
-    if (!editing) save(tasks);
+    if (!editing) {
+      save(tasks);
+      if (tasks.length && tasks.reduce((acc, { done }) => acc && done, true))
+        showConvetti();
+    }
   }}
 >
   {#each tasks as obj, index}
