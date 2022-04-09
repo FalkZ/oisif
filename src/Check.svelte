@@ -27,6 +27,7 @@
 </script>
 
 <li
+  class:done={obj.done}
   class:editing
   on:click={() => {
     if (!editing) obj.done = !obj.done;
@@ -65,6 +66,11 @@
     text-align: center;
   }
 
+  li:not(.done) .check::before {
+    content: "•";
+    color: var(--grey);
+  }
+
   li.editing:last-child .check::before {
     content: "+";
     color: var(--grey);
@@ -94,6 +100,7 @@
     list-style: none;
 
     padding: 10px;
+    padding-left: 20px;
     cursor: pointer;
     user-select: none;
   }

@@ -107,7 +107,8 @@
     position: absolute;
     padding: 0;
     font-size: 30px;
-    background-color: #e6e6f7;
+    background-color: white;
+    /* #e6e6f7; */
   }
 
   :global(#app) {
@@ -118,7 +119,7 @@
       "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
       "Helvetica Neue", sans-serif;
     font-weight: 700;
-    --grey: rgb(155, 155, 182);
+    --grey: #e6e6f7;
   }
   :global(*) {
     color: rgb(17, 17, 87);
